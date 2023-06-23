@@ -1,26 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <MenuButton />
+    <LiveFeed />
+    <MotorSliders />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MenuButton from './components/MenuButton.vue';
+import LiveFeed from './components/LiveFeed.vue';
+import MotorSliders from './components/MotorSliders.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    MenuButton,
+    LiveFeed,
+    MotorSliders,
+  },
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
